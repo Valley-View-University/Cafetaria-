@@ -16,5 +16,10 @@ namespace CafeteriaManagementSystem
         {
             InitializeComponent();
         }
+
+        private void btnAuthenticate_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
