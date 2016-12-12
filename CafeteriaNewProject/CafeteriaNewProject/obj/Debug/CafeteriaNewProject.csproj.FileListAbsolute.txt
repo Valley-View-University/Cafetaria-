@@ -8,3 +8,13 @@ C:\Users\Qwajo\Documents\SoftWare..Project\CafeteriaNewProject\CafeteriaNewProje
 C:\Users\Qwajo\Documents\SoftWare..Project\CafeteriaNewProject\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.exe
 C:\Users\Qwajo\Documents\SoftWare..Project\CafeteriaNewProject\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.pdb
 C:\Users\Qwajo\Documents\SoftWare..Project\CafeteriaNewProject\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.Authenticate.resources
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaNewProject\CafeteriaNewProject\bin\Debug\CafeteriaNewProject.exe.config
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaNewProject\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.exe
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaNewProject\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.pdb
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaNewProject\CafeteriaNewProject\bin\Debug\CafeteriaNewProject.exe
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaNewProject\CafeteriaNewProject\bin\Debug\CafeteriaNewProject.pdb
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaNewProject\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.csprojResolveAssemblyReference.cache
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaNewProject\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.Authenticate.resources
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaNewProject\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.Form1.resources
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaNewProject\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.Properties.Resources.resources
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaNewProject\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.csproj.GenerateResource.Cache
