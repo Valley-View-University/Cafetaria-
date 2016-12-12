@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.comSunSuper = new System.Windows.Forms.ComboBox();
@@ -80,18 +86,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.comSpecialDiet = new System.Windows.Forms.ComboBox();
+            this.label32 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.comSpecialDiet);
+            this.panel1.Controls.Add(this.label31);
             this.panel1.Controls.Add(this.comboBox4);
             this.panel1.Controls.Add(this.comboBox3);
             this.panel1.Controls.Add(this.comboBox2);
@@ -155,9 +160,82 @@
             this.panel1.Size = new System.Drawing.Size(952, 518);
             this.panel1.TabIndex = 0;
             // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "5:00pm - 6:00pm",
+            "6:00pm - 7:00pm",
+            "7:00pm - 7:30pm"});
+            this.comboBox4.Location = new System.Drawing.Point(777, 416);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 24);
+            this.comboBox4.TabIndex = 56;
+            this.comboBox4.Text = "Supper Time";
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "12:30pm - 1:30pm",
+            "1:30pm - 2:30pm"});
+            this.comboBox3.Location = new System.Drawing.Point(628, 416);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 24);
+            this.comboBox3.TabIndex = 55;
+            this.comboBox3.Text = "Lunch Time";
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "8:00am - 9:00am",
+            "9:00am - 10:00am",
+            "10:00am - 11:00am"});
+            this.comboBox2.Location = new System.Drawing.Point(485, 416);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 54;
+            this.comboBox2.Text = "BreakFast Time";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Cafeteria Delivery",
+            "Porters Lodge Delivery",
+            "Door Delivery"});
+            this.comboBox1.Location = new System.Drawing.Point(485, 362);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 53;
+            this.comboBox1.Text = "Delivery Type";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(369, 424);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(96, 16);
+            this.label30.TabIndex = 52;
+            this.label30.Text = "Delivery Time";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(371, 365);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(94, 16);
+            this.label29.TabIndex = 51;
+            this.label29.Text = "Delivery Type";
+            // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(788, 434);
+            this.btnExit.Location = new System.Drawing.Point(694, 466);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(133, 49);
             this.btnExit.TabIndex = 50;
@@ -167,7 +245,7 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(605, 434);
+            this.btnSubmit.Location = new System.Drawing.Point(504, 466);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(133, 49);
             this.btnSubmit.TabIndex = 49;
@@ -187,7 +265,8 @@
             this.comSunSuper.Name = "comSunSuper";
             this.comSunSuper.Size = new System.Drawing.Size(185, 24);
             this.comSunSuper.TabIndex = 48;
-            this.comSunSuper.Text = "Super";
+            this.comSunSuper.Text = "Supper";
+            this.comSunSuper.SelectedIndexChanged += new System.EventHandler(this.comSunSuper_SelectedIndexChanged);
             // 
             // comSunLunch
             // 
@@ -202,6 +281,7 @@
             this.comSunLunch.Size = new System.Drawing.Size(185, 24);
             this.comSunLunch.TabIndex = 47;
             this.comSunLunch.Text = "Lunch";
+            this.comSunLunch.SelectedIndexChanged += new System.EventHandler(this.comSunLunch_SelectedIndexChanged);
             // 
             // comSunBreakFast
             // 
@@ -216,15 +296,16 @@
             this.comSunBreakFast.Size = new System.Drawing.Size(185, 24);
             this.comSunBreakFast.TabIndex = 46;
             this.comSunBreakFast.Text = "BreakFast";
+            this.comSunBreakFast.SelectedIndexChanged += new System.EventHandler(this.comSunBreakFast_SelectedIndexChanged);
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(41, 424);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(50, 16);
+            this.label25.Size = new System.Drawing.Size(58, 16);
             this.label25.TabIndex = 45;
-            this.label25.Text = "Super:";
+            this.label25.Text = "Supper:";
             // 
             // label26
             // 
@@ -266,7 +347,8 @@
             this.comSatSuper.Name = "comSatSuper";
             this.comSatSuper.Size = new System.Drawing.Size(185, 24);
             this.comSatSuper.TabIndex = 41;
-            this.comSatSuper.Text = "Super";
+            this.comSatSuper.Text = "Supper";
+            this.comSatSuper.SelectedIndexChanged += new System.EventHandler(this.comSatSuper_SelectedIndexChanged);
             // 
             // comSatLunch
             // 
@@ -281,6 +363,7 @@
             this.comSatLunch.Size = new System.Drawing.Size(185, 24);
             this.comSatLunch.TabIndex = 40;
             this.comSatLunch.Text = "Lunch";
+            this.comSatLunch.SelectedIndexChanged += new System.EventHandler(this.comSatLunch_SelectedIndexChanged);
             // 
             // comSatBreakFast
             // 
@@ -295,15 +378,16 @@
             this.comSatBreakFast.Size = new System.Drawing.Size(185, 24);
             this.comSatBreakFast.TabIndex = 39;
             this.comSatBreakFast.Text = "BreakFast";
+            this.comSatBreakFast.SelectedIndexChanged += new System.EventHandler(this.comSatBreakFast_SelectedIndexChanged);
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(667, 263);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(50, 16);
+            this.label21.Size = new System.Drawing.Size(58, 16);
             this.label21.TabIndex = 38;
-            this.label21.Text = "Super:";
+            this.label21.Text = "Supper:";
             // 
             // label22
             // 
@@ -345,7 +429,8 @@
             this.comFriSuper.Name = "comFriSuper";
             this.comFriSuper.Size = new System.Drawing.Size(185, 24);
             this.comFriSuper.TabIndex = 34;
-            this.comFriSuper.Text = "Super";
+            this.comFriSuper.Text = "Supper";
+            this.comFriSuper.SelectedIndexChanged += new System.EventHandler(this.comFriSuper_SelectedIndexChanged);
             // 
             // comFriLunch
             // 
@@ -360,6 +445,7 @@
             this.comFriLunch.Size = new System.Drawing.Size(185, 24);
             this.comFriLunch.TabIndex = 33;
             this.comFriLunch.Text = "Lunch";
+            this.comFriLunch.SelectedIndexChanged += new System.EventHandler(this.comFriLunch_SelectedIndexChanged);
             // 
             // comFriBreakFast
             // 
@@ -374,15 +460,16 @@
             this.comFriBreakFast.Size = new System.Drawing.Size(185, 24);
             this.comFriBreakFast.TabIndex = 32;
             this.comFriBreakFast.Text = "BreakFast";
+            this.comFriBreakFast.SelectedIndexChanged += new System.EventHandler(this.comFriBreakFast_SelectedIndexChanged);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(371, 263);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(50, 16);
+            this.label17.Size = new System.Drawing.Size(58, 16);
             this.label17.TabIndex = 31;
-            this.label17.Text = "Super:";
+            this.label17.Text = "Supper:";
             // 
             // label18
             // 
@@ -424,7 +511,8 @@
             this.comThuSuper.Name = "comThuSuper";
             this.comThuSuper.Size = new System.Drawing.Size(185, 24);
             this.comThuSuper.TabIndex = 27;
-            this.comThuSuper.Text = "Super";
+            this.comThuSuper.Text = "Supper";
+            this.comThuSuper.SelectedIndexChanged += new System.EventHandler(this.comThuSuper_SelectedIndexChanged);
             // 
             // comThuLunch
             // 
@@ -439,6 +527,7 @@
             this.comThuLunch.Size = new System.Drawing.Size(185, 24);
             this.comThuLunch.TabIndex = 26;
             this.comThuLunch.Text = "Lunch";
+            this.comThuLunch.SelectedIndexChanged += new System.EventHandler(this.comThuLunch_SelectedIndexChanged);
             // 
             // comThuBreakFast
             // 
@@ -453,15 +542,16 @@
             this.comThuBreakFast.Size = new System.Drawing.Size(185, 24);
             this.comThuBreakFast.TabIndex = 25;
             this.comThuBreakFast.Text = "BreakFast";
+            this.comThuBreakFast.SelectedIndexChanged += new System.EventHandler(this.comThuBreakFast_SelectedIndexChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(41, 263);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(50, 16);
+            this.label13.Size = new System.Drawing.Size(58, 16);
             this.label13.TabIndex = 24;
-            this.label13.Text = "Super:";
+            this.label13.Text = "Supper:";
             // 
             // label14
             // 
@@ -503,7 +593,8 @@
             this.comWedSuper.Name = "comWedSuper";
             this.comWedSuper.Size = new System.Drawing.Size(187, 24);
             this.comWedSuper.TabIndex = 20;
-            this.comWedSuper.Text = "Super";
+            this.comWedSuper.Text = "Supper";
+            this.comWedSuper.SelectedIndexChanged += new System.EventHandler(this.comWedSuper_SelectedIndexChanged);
             // 
             // comWedLunch
             // 
@@ -518,6 +609,7 @@
             this.comWedLunch.Size = new System.Drawing.Size(187, 24);
             this.comWedLunch.TabIndex = 19;
             this.comWedLunch.Text = "Lunch";
+            this.comWedLunch.SelectedIndexChanged += new System.EventHandler(this.comWedLunch_SelectedIndexChanged);
             // 
             // comWedBreakFast
             // 
@@ -532,6 +624,7 @@
             this.comWedBreakFast.Size = new System.Drawing.Size(187, 24);
             this.comWedBreakFast.TabIndex = 18;
             this.comWedBreakFast.Text = "Breakfast";
+            this.comWedBreakFast.SelectedIndexChanged += new System.EventHandler(this.comWedBreakFast_SelectedIndexChanged);
             // 
             // comTueSuper
             // 
@@ -546,7 +639,8 @@
             this.comTueSuper.Name = "comTueSuper";
             this.comTueSuper.Size = new System.Drawing.Size(189, 24);
             this.comTueSuper.TabIndex = 17;
-            this.comTueSuper.Text = "Super";
+            this.comTueSuper.Text = "Supper";
+            this.comTueSuper.SelectedIndexChanged += new System.EventHandler(this.comTueSuper_SelectedIndexChanged);
             // 
             // comTueLunch
             // 
@@ -561,6 +655,7 @@
             this.comTueLunch.Size = new System.Drawing.Size(189, 24);
             this.comTueLunch.TabIndex = 16;
             this.comTueLunch.Text = "Lunch";
+            this.comTueLunch.SelectedIndexChanged += new System.EventHandler(this.comTueLunch_SelectedIndexChanged);
             // 
             // comTueBreakFast
             // 
@@ -575,6 +670,7 @@
             this.comTueBreakFast.Size = new System.Drawing.Size(189, 24);
             this.comTueBreakFast.TabIndex = 15;
             this.comTueBreakFast.Text = "BreakFast";
+            this.comTueBreakFast.SelectedIndexChanged += new System.EventHandler(this.comTueBreakFast_SelectedIndexChanged);
             // 
             // comMonSuper
             // 
@@ -589,7 +685,8 @@
             this.comMonSuper.Name = "comMonSuper";
             this.comMonSuper.Size = new System.Drawing.Size(185, 24);
             this.comMonSuper.TabIndex = 14;
-            this.comMonSuper.Text = "Super";
+            this.comMonSuper.Text = "Supper";
+            this.comMonSuper.SelectedIndexChanged += new System.EventHandler(this.comMonSuper_SelectedIndexChanged);
             // 
             // comMonLunch
             // 
@@ -604,6 +701,7 @@
             this.comMonLunch.Size = new System.Drawing.Size(185, 24);
             this.comMonLunch.TabIndex = 13;
             this.comMonLunch.Text = "Lunch";
+            this.comMonLunch.SelectedIndexChanged += new System.EventHandler(this.comMonLunch_SelectedIndexChanged);
             // 
             // comMonBreakFast
             // 
@@ -618,15 +716,17 @@
             this.comMonBreakFast.Size = new System.Drawing.Size(185, 24);
             this.comMonBreakFast.TabIndex = 12;
             this.comMonBreakFast.Text = "BreakFast";
+            this.comMonBreakFast.SelectedIndexChanged += new System.EventHandler(this.comMonBreakFast_SelectedIndexChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(667, 108);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 16);
+            this.label9.Size = new System.Drawing.Size(58, 16);
             this.label9.TabIndex = 11;
-            this.label9.Text = "Super:";
+            this.label9.Text = "Supper:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -660,9 +760,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(371, 108);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 16);
+            this.label5.Size = new System.Drawing.Size(58, 16);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Super:";
+            this.label5.Text = "Supper:";
             // 
             // label6
             // 
@@ -696,9 +796,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(41, 108);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 16);
+            this.label4.Size = new System.Drawing.Size(58, 16);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Super:";
+            this.label4.Text = "Supper:";
             // 
             // label3
             // 
@@ -727,86 +827,52 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Monday";
             // 
-            // label29
+            // label31
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(371, 325);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(94, 16);
-            this.label29.TabIndex = 51;
-            this.label29.Text = "Delivery Type";
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(374, 315);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(85, 16);
+            this.label31.TabIndex = 57;
+            this.label31.Text = "Special Diet";
             // 
-            // label30
+            // comSpecialDiet
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(369, 381);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(96, 16);
-            this.label30.TabIndex = 52;
-            this.label30.Text = "Delivery Time";
+            this.comSpecialDiet.FormattingEnabled = true;
+            this.comSpecialDiet.Items.AddRange(new object[] {
+            "Sugar Free",
+            "Salt Free",
+            "Pepper Free"});
+            this.comSpecialDiet.Location = new System.Drawing.Point(465, 312);
+            this.comSpecialDiet.Name = "comSpecialDiet";
+            this.comSpecialDiet.Size = new System.Drawing.Size(184, 24);
+            this.comSpecialDiet.TabIndex = 58;
+            this.comSpecialDiet.Text = "Special Diet";
+            this.comSpecialDiet.SelectedIndexChanged += new System.EventHandler(this.comSpecialDiet_SelectedIndexChanged);
             // 
-            // comboBox1
+            // label32
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Cafeteria Delivery",
-            "Porters Lodge Delivery",
-            "Door Delivery"});
-            this.comboBox1.Location = new System.Drawing.Point(485, 325);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 53;
-            this.comboBox1.Text = "Delivery Type";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "8:00am - 9:00am",
-            "9:00am - 10:00am",
-            "10:00am - 11:00am"});
-            this.comboBox2.Location = new System.Drawing.Point(485, 373);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 54;
-            this.comboBox2.Text = "BreakFast Time";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "12:30pm - 1:30pm",
-            "1:30pm - 2:30pm"});
-            this.comboBox3.Location = new System.Drawing.Point(628, 373);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 24);
-            this.comboBox3.TabIndex = 55;
-            this.comboBox3.Text = "Lunch Time";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "5:00pm - 6:00pm",
-            "6:00pm - 7:00pm",
-            "7:00pm - 7:30pm"});
-            this.comboBox4.Location = new System.Drawing.Point(776, 373);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 24);
-            this.comboBox4.TabIndex = 56;
-            this.comboBox4.Text = "Super Time";
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Arial", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(319, 4);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(300, 32);
+            this.label32.TabIndex = 1;
+            this.label32.Text = "Select Your Meal Here";
             // 
             // Authenticate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(953, 555);
+            this.Controls.Add(this.label32);
             this.Controls.Add(this.panel1);
             this.Name = "Authenticate";
             this.Text = "Authenticate";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -870,5 +936,8 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.ComboBox comSpecialDiet;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
     }
 }
