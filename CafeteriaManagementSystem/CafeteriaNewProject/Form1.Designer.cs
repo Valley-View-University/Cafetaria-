@@ -87,6 +87,7 @@
             this.btnNewFaculty.TabIndex = 7;
             this.btnNewFaculty.Text = "New Faculty";
             this.btnNewFaculty.UseVisualStyleBackColor = true;
+            this.btnNewFaculty.Click += new System.EventHandler(this.btnNewFaculty_Click);
             // 
             // btnNewStudent
             // 
@@ -112,6 +113,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(131, 74);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(229, 26);
             this.txtPassword.TabIndex = 4;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);

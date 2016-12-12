@@ -70,5 +70,12 @@ namespace CafeteriaNewProject
             NewStudent Heg = new NewStudent();
             Heg.Show();
         }
+
+        private void btnNewFaculty_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NewFaculty Pen = new NewFaculty();
+            Pen.Show();
+        }
     }
 }
