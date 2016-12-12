@@ -142,7 +142,6 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 24);
             this.comboBox4.TabIndex = 56;
-            this.comboBox4.Text = "Supper Time";
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // comboBox3
@@ -155,7 +154,6 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 24);
             this.comboBox3.TabIndex = 55;
-            this.comboBox3.Text = "Lunch Time";
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // comboBox2
@@ -169,7 +167,6 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
             this.comboBox2.TabIndex = 54;
-            this.comboBox2.Text = "BreakFast Time";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox1
@@ -183,7 +180,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 53;
-            this.comboBox1.Text = "Delivery Type";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnExit
@@ -204,6 +200,7 @@
             this.btnSubmit.TabIndex = 49;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // comSunSuper
             // 
@@ -218,7 +215,6 @@
             this.comSunSuper.Name = "comSunSuper";
             this.comSunSuper.Size = new System.Drawing.Size(185, 24);
             this.comSunSuper.TabIndex = 48;
-            this.comSunSuper.Text = "Supper";
             this.comSunSuper.SelectedIndexChanged += new System.EventHandler(this.comSunSuper_SelectedIndexChanged);
             // 
             // comSunLunch
@@ -233,7 +229,6 @@
             this.comSunLunch.Name = "comSunLunch";
             this.comSunLunch.Size = new System.Drawing.Size(185, 24);
             this.comSunLunch.TabIndex = 47;
-            this.comSunLunch.Text = "Lunch";
             this.comSunLunch.SelectedIndexChanged += new System.EventHandler(this.comSunLunch_SelectedIndexChanged);
             // 
             // comSunBreakFast
@@ -248,7 +243,6 @@
             this.comSunBreakFast.Name = "comSunBreakFast";
             this.comSunBreakFast.Size = new System.Drawing.Size(185, 24);
             this.comSunBreakFast.TabIndex = 46;
-            this.comSunBreakFast.Text = "BreakFast";
             this.comSunBreakFast.SelectedIndexChanged += new System.EventHandler(this.comSunBreakFast_SelectedIndexChanged);
             // 
             // label25
@@ -291,7 +285,6 @@
             this.comSatSuper.Name = "comSatSuper";
             this.comSatSuper.Size = new System.Drawing.Size(185, 24);
             this.comSatSuper.TabIndex = 41;
-            this.comSatSuper.Text = "Supper";
             this.comSatSuper.SelectedIndexChanged += new System.EventHandler(this.comSatSuper_SelectedIndexChanged);
             // 
             // comSatLunch
@@ -306,7 +299,6 @@
             this.comSatLunch.Name = "comSatLunch";
             this.comSatLunch.Size = new System.Drawing.Size(185, 24);
             this.comSatLunch.TabIndex = 40;
-            this.comSatLunch.Text = "Lunch";
             this.comSatLunch.SelectedIndexChanged += new System.EventHandler(this.comSatLunch_SelectedIndexChanged);
             // 
             // comSatBreakFast
@@ -321,7 +313,6 @@
             this.comSatBreakFast.Name = "comSatBreakFast";
             this.comSatBreakFast.Size = new System.Drawing.Size(185, 24);
             this.comSatBreakFast.TabIndex = 39;
-            this.comSatBreakFast.Text = "BreakFast";
             this.comSatBreakFast.SelectedIndexChanged += new System.EventHandler(this.comSatBreakFast_SelectedIndexChanged);
             // 
             // label21
@@ -364,7 +355,6 @@
             this.comFriSuper.Name = "comFriSuper";
             this.comFriSuper.Size = new System.Drawing.Size(185, 24);
             this.comFriSuper.TabIndex = 34;
-            this.comFriSuper.Text = "Supper";
             this.comFriSuper.SelectedIndexChanged += new System.EventHandler(this.comFriSuper_SelectedIndexChanged);
             // 
             // comFriLunch
@@ -379,7 +369,6 @@
             this.comFriLunch.Name = "comFriLunch";
             this.comFriLunch.Size = new System.Drawing.Size(185, 24);
             this.comFriLunch.TabIndex = 33;
-            this.comFriLunch.Text = "Lunch";
             this.comFriLunch.SelectedIndexChanged += new System.EventHandler(this.comFriLunch_SelectedIndexChanged);
             // 
             // comFriBreakFast
@@ -394,7 +383,6 @@
             this.comFriBreakFast.Name = "comFriBreakFast";
             this.comFriBreakFast.Size = new System.Drawing.Size(185, 24);
             this.comFriBreakFast.TabIndex = 32;
-            this.comFriBreakFast.Text = "BreakFast";
             this.comFriBreakFast.SelectedIndexChanged += new System.EventHandler(this.comFriBreakFast_SelectedIndexChanged);
             // 
             // label17
@@ -437,7 +425,6 @@
             this.comThuSuper.Name = "comThuSuper";
             this.comThuSuper.Size = new System.Drawing.Size(185, 24);
             this.comThuSuper.TabIndex = 27;
-            this.comThuSuper.Text = "Supper";
             this.comThuSuper.SelectedIndexChanged += new System.EventHandler(this.comThuSuper_SelectedIndexChanged);
             // 
             // comThuLunch
@@ -452,7 +439,6 @@
             this.comThuLunch.Name = "comThuLunch";
             this.comThuLunch.Size = new System.Drawing.Size(185, 24);
             this.comThuLunch.TabIndex = 26;
-            this.comThuLunch.Text = "Lunch";
             this.comThuLunch.SelectedIndexChanged += new System.EventHandler(this.comThuLunch_SelectedIndexChanged);
             // 
             // comThuBreakFast
@@ -467,7 +453,6 @@
             this.comThuBreakFast.Name = "comThuBreakFast";
             this.comThuBreakFast.Size = new System.Drawing.Size(185, 24);
             this.comThuBreakFast.TabIndex = 25;
-            this.comThuBreakFast.Text = "BreakFast";
             this.comThuBreakFast.SelectedIndexChanged += new System.EventHandler(this.comThuBreakFast_SelectedIndexChanged);
             // 
             // label13
@@ -510,7 +495,6 @@
             this.comWedSuper.Name = "comWedSuper";
             this.comWedSuper.Size = new System.Drawing.Size(187, 24);
             this.comWedSuper.TabIndex = 20;
-            this.comWedSuper.Text = "Supper";
             this.comWedSuper.SelectedIndexChanged += new System.EventHandler(this.comWedSuper_SelectedIndexChanged);
             // 
             // comWedLunch
@@ -525,7 +509,6 @@
             this.comWedLunch.Name = "comWedLunch";
             this.comWedLunch.Size = new System.Drawing.Size(187, 24);
             this.comWedLunch.TabIndex = 19;
-            this.comWedLunch.Text = "Lunch";
             this.comWedLunch.SelectedIndexChanged += new System.EventHandler(this.comWedLunch_SelectedIndexChanged);
             // 
             // comWedBreakFast
@@ -540,7 +523,6 @@
             this.comWedBreakFast.Name = "comWedBreakFast";
             this.comWedBreakFast.Size = new System.Drawing.Size(187, 24);
             this.comWedBreakFast.TabIndex = 18;
-            this.comWedBreakFast.Text = "Breakfast";
             this.comWedBreakFast.SelectedIndexChanged += new System.EventHandler(this.comWedBreakFast_SelectedIndexChanged);
             // 
             // comTueSuper
@@ -556,7 +538,6 @@
             this.comTueSuper.Name = "comTueSuper";
             this.comTueSuper.Size = new System.Drawing.Size(189, 24);
             this.comTueSuper.TabIndex = 17;
-            this.comTueSuper.Text = "Supper";
             this.comTueSuper.SelectedIndexChanged += new System.EventHandler(this.comTueSuper_SelectedIndexChanged);
             // 
             // comTueLunch
@@ -571,7 +552,6 @@
             this.comTueLunch.Name = "comTueLunch";
             this.comTueLunch.Size = new System.Drawing.Size(189, 24);
             this.comTueLunch.TabIndex = 16;
-            this.comTueLunch.Text = "Lunch";
             this.comTueLunch.SelectedIndexChanged += new System.EventHandler(this.comTueLunch_SelectedIndexChanged);
             // 
             // comTueBreakFast
@@ -586,7 +566,6 @@
             this.comTueBreakFast.Name = "comTueBreakFast";
             this.comTueBreakFast.Size = new System.Drawing.Size(189, 24);
             this.comTueBreakFast.TabIndex = 15;
-            this.comTueBreakFast.Text = "BreakFast";
             this.comTueBreakFast.SelectedIndexChanged += new System.EventHandler(this.comTueBreakFast_SelectedIndexChanged);
             // 
             // comMonSuper
@@ -602,7 +581,6 @@
             this.comMonSuper.Name = "comMonSuper";
             this.comMonSuper.Size = new System.Drawing.Size(185, 24);
             this.comMonSuper.TabIndex = 14;
-            this.comMonSuper.Text = "Supper";
             this.comMonSuper.SelectedIndexChanged += new System.EventHandler(this.comMonSuper_SelectedIndexChanged);
             // 
             // comMonLunch
@@ -617,13 +595,13 @@
             this.comMonLunch.Name = "comMonLunch";
             this.comMonLunch.Size = new System.Drawing.Size(185, 24);
             this.comMonLunch.TabIndex = 13;
-            this.comMonLunch.Text = "Lunch";
             this.comMonLunch.SelectedIndexChanged += new System.EventHandler(this.comMonLunch_SelectedIndexChanged);
             // 
             // comMonBreakFast
             // 
             this.comMonBreakFast.FormattingEnabled = true;
             this.comMonBreakFast.Items.AddRange(new object[] {
+            "",
             "Bread with Oat",
             "Bread with Tea.",
             "Bread with Porridge",
@@ -632,7 +610,6 @@
             this.comMonBreakFast.Name = "comMonBreakFast";
             this.comMonBreakFast.Size = new System.Drawing.Size(185, 24);
             this.comMonBreakFast.TabIndex = 12;
-            this.comMonBreakFast.Text = "BreakFast";
             this.comMonBreakFast.SelectedIndexChanged += new System.EventHandler(this.comMonBreakFast_SelectedIndexChanged);
             // 
             // label9

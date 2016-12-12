@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace CafeteriaNewProject
 {
     public partial class Authenticate : Form
@@ -262,5 +262,47 @@ namespace CafeteriaNewProject
                 comSpecialDiet.Focus();
             }
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            
+             SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\Projects;Initial Catalog=cafeteria;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False");
+
+             try
+             {
+                 conn.Open();
+                 if (comMonBreakFast.Text == "" & comMonLunch.Text == "" & comMonSuper.Text == "" & comTueBreakFast.Text == "" & comTueLunch.Text == "" & comTueSuper.Text == "" & comWedBreakFast.Text == "" & comWedLunch.Text == "" & comWedSuper.Text == "" & comThuBreakFast.Text == "" & comThuLunch.Text == "" & comThuSuper.Text == "" & comFriBreakFast.Text == "" & comFriLunch.Text == "" & comFriSuper.Text == "" & comSatBreakFast.Text == "" & comSatLunch.Text == "" & comSatSuper.Text == "" & comSunBreakFast.Text == "" & comSunLunch.Text == "" & comSunSuper.Text == "" & comboBox1.Text == "" & comboBox2.Text == "" & comboBox3.Text == "" & comboBox4.Text == "" )
+                 {
+
+
+                     MessageBox.Show("Please all forms required");
+
+                 }
+                 else
+                 {
+
+
+                     SqlCommand com = new SqlCommand("Insert into Mondays(BreakFast,Lunch,Supper) Values('" + comMonBreakFast.Text + "','" + comMonLunch.Text + "','" + comMonSuper.Text + "')", conn);
+                     SqlCommand toy = new SqlCommand("Insert into Tuesdays(BreakFast,Lunch,Supper) Values('" + comTueBreakFast.Text + "','" + comTueLunch.Text + "','" + comTueSuper.Text + "')", conn);
+                     SqlCommand me = new SqlCommand("Insert into Wednesdays(BreakFast,Lunch,Supper) Values('" + comWedBreakFast.Text + "','" + comWedLunch.Text + "','" + comWedSuper.Text + "')", conn);
+                     SqlCommand to = new SqlCommand("Insert into Thursdays(BreakFast,Lunch,Supper) Values('" + comThuBreakFast.Text + "','" + comThuLunch.Text + "','" + comThuSuper.Text + "')", conn);
+                     SqlCommand ten = new SqlCommand("Insert into Fridays(BreakFast,Lunch,Supper) Values('" + comFriBreakFast.Text + "','" + comFriLunch.Text + "','" + comFriSuper.Text + "')", conn);
+                     SqlCommand pen = new SqlCommand("Insert into Saturdays(BreakFast,Lunch,Supper) Values('" + comSatBreakFast.Text + "','" + comSatLunch.Text + "','" + comSatSuper.Text + "')", conn);
+                     SqlCommand hen = new SqlCommand("Insert into Sundays(BreakFast,Lunch,Supper) Values('" + comSunBreakFast.Text + "','" + comSunLunch.Text + "','" + comSunSuper.Text + "')", conn);
+                     SqlCommand he = new SqlCommand("Insert into Deliverys(DeliveryType,BreakFastTime,LunchTime,SupperTime) Values('" + comboBox1.Text + "','" + comboBox2.Text + "','" + comboBox3.Text + "','" + comboBox4.Text + "')", conn);
+                 
+                     com.ExecuteNonQuery();
+                     MessageBox.Show("Registration Successful");
+                     conn.Close();
+                 }
+                 }
+             
+             catch (Exception ex)
+             {
+                 MessageBox.Show(ex.Message);
+
+             }
+        }
+        }
     }
-}
+
