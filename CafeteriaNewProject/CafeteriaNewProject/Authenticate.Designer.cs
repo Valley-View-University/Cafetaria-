@@ -151,6 +151,7 @@
             this.btnExit.TabIndex = 50;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSubmit
             // 
@@ -160,6 +161,7 @@
             this.btnSubmit.TabIndex = 49;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // comSunSuper
             // 
