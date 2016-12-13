@@ -16,3 +16,6 @@ C:\Users\Qwajo\Documents\Cafetaria-\CafeteriaManagementSystem\CafeteriaManagemen
 C:\Users\Qwajo\Documents\Cafetaria-\CafeteriaManagementSystem\CafeteriaManagementSystem\obj\Debug\CafeteriaManagementSystem.Form1.resources
 C:\Users\Qwajo\Documents\Cafetaria-\CafeteriaManagementSystem\CafeteriaManagementSystem\obj\Debug\CafeteriaManagementSystem.Properties.Resources.resources
 C:\Users\Qwajo\Documents\Cafetaria-\CafeteriaManagementSystem\CafeteriaManagementSystem\obj\Debug\CafeteriaManagementSystem.csproj.GenerateResource.Cache
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaManagementSystem\CafeteriaManagementSystem\bin\Debug\CafeteriaManagementSystem.exe.config
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaManagementSystem\CafeteriaManagementSystem\obj\Debug\CafeteriaManagementSystem.exe
+C:\Users\DR. BATSE\Desktop\SEMESTER NOTES\REPOSITORY\Cafetaria-\CafeteriaManagementSystem\CafeteriaManagementSystem\obj\Debug\CafeteriaManagementSystem.pdb
