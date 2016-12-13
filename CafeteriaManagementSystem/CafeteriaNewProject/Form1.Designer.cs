@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnClick = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnNewFaculty = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.btnClick);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnNewFaculty);
@@ -56,15 +58,25 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 60);
+            this.panel1.Location = new System.Drawing.Point(64, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(447, 298);
+            this.panel1.Size = new System.Drawing.Size(477, 381);
             this.panel1.TabIndex = 0;
+            // 
+            // btnClick
+            // 
+            this.btnClick.Location = new System.Drawing.Point(156, 206);
+            this.btnClick.Name = "btnClick";
+            this.btnClick.Size = new System.Drawing.Size(142, 23);
+            this.btnClick.TabIndex = 10;
+            this.btnClick.Text = "Click To View";
+            this.btnClick.UseVisualStyleBackColor = true;
+            this.btnClick.Click += new System.EventHandler(this.btnClick_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 262);
+            this.label5.Location = new System.Drawing.Point(50, 332);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(283, 19);
             this.label5.TabIndex = 9;
@@ -73,7 +85,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 232);
+            this.label4.Location = new System.Drawing.Point(50, 302);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(343, 19);
             this.label4.TabIndex = 8;
@@ -129,7 +141,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(93, 201);
+            this.label3.Location = new System.Drawing.Point(122, 271);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(211, 19);
             this.label3.TabIndex = 2;
@@ -168,7 +180,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CafeteriaNewProject.Properties.Resources.images;
-            this.ClientSize = new System.Drawing.Size(955, 361);
+            this.ClientSize = new System.Drawing.Size(955, 453);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -196,6 +208,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnClick;
     }
 }
 

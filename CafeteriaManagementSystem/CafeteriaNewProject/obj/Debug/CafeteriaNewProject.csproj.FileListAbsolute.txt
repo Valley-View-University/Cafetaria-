@@ -20,3 +20,5 @@ C:\Users\Qwajo\Documents\Cafetaria-\CafeteriaManagementSystem\CafeteriaNewProjec
 C:\Users\Qwajo\Documents\Cafetaria-\CafeteriaManagementSystem\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.csproj.GenerateResource.Cache
 C:\Users\Qwajo\Documents\Cafetaria-\CafeteriaManagementSystem\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.NewStudent.resources
 C:\Users\Qwajo\Documents\Cafetaria-\CafeteriaManagementSystem\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.NewFaculty.resources
+C:\Users\Qwajo\Documents\Cafetaria-\CafeteriaManagementSystem\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.Admi.resources
+C:\Users\Qwajo\Documents\Cafetaria-\CafeteriaManagementSystem\CafeteriaNewProject\obj\Debug\CafeteriaNewProject.Details.resources

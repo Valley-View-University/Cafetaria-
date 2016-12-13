@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace CafeteriaNewProject
 {
     public partial class Form1 : Form
@@ -39,29 +39,27 @@ namespace CafeteriaNewProject
 
         private void btnAuthenticate_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" & txtPassword.Text != "")
-            {
-                Authenticate obj = new Authenticate();
-                string msg = null;
-                msg += "USER ID: " + textBox1.Text;
-                msg += "\n" + "PASSWORD:" + txtPassword.Text + "\n";
+            SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\Projects;Initial Catalog=cafeteria;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False");
+            SqlDataAdapter adapta = new SqlDataAdapter("SELECT COUNT (*) FROM Registration WHERE StudentID= '" + textBox1.Text + "' AND Password= '" + txtPassword.Text + "' ", conn);
+            SqlDataAdapter help = new SqlDataAdapter("SELECT COUNT (*) FROM Registration WHERE FacultyID= '" + textBox1.Text + "' AND Password= '" + txtPassword.Text + "' ", conn);
+            
+            DataTable table = new DataTable();
+            adapta.Fill(table);
 
-                obj.Show();
-                this.Hide();
-            }
+                if (table.Rows[0][0].ToString()=="1"){
+                    Hide();
+                    Authenticate open = new Authenticate();
+                    open.Show();
+                }
 
-            else if (textBox1.Text == "Admin" & txtPassword.Text == "admin")
-            {
-                Authenticate k = new Authenticate();
-                k.Show();
-                this.Hide();
-            }
+                else
+                {
+                    MessageBox.Show("You are not registered");
 
-            else
-            {
-                MessageBox.Show("Check YOUR Username and Password");
-            }
+                }
            
+        
+        
         }
 
         private void btnNewStudent_Click(object sender, EventArgs e)
@@ -76,6 +74,17 @@ namespace CafeteriaNewProject
             this.Hide();
             NewFaculty Pen = new NewFaculty();
             Pen.Show();
+
+            
+        }
+
+        private void btnClick_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admi rr = new Admi();
+            rr.Show();
+
+                
         }
     }
 }

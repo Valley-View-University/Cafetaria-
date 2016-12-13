@@ -44,11 +44,88 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admi.Designer.cs">
+      <DependentUpon>Admi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Authenticate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Authenticate.Designer.cs">
       <DependentUpon>Authenticate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeteriaDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Details.Designer.cs">
+      <DependentUpon>Details.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -70,8 +147,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admi.resx">
+      <DependentUpon>Admi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Authenticate.resx">
       <DependentUpon>Authenticate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details.resx">
+      <DependentUpon>Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -92,6 +175,149 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="cafeteriaDataSet.xsc">
+      <DependentUpon>cafeteriaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet.xss">
+      <DependentUpon>cafeteriaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet1.xsc">
+      <DependentUpon>cafeteriaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet1.xss">
+      <DependentUpon>cafeteriaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet10.xsc">
+      <DependentUpon>cafeteriaDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet10.xss">
+      <DependentUpon>cafeteriaDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet11.xsc">
+      <DependentUpon>cafeteriaDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet11.xss">
+      <DependentUpon>cafeteriaDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet12.xsc">
+      <DependentUpon>cafeteriaDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet12.xss">
+      <DependentUpon>cafeteriaDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet2.xsc">
+      <DependentUpon>cafeteriaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet2.xss">
+      <DependentUpon>cafeteriaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet3.xsc">
+      <DependentUpon>cafeteriaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet3.xss">
+      <DependentUpon>cafeteriaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet4.xsc">
+      <DependentUpon>cafeteriaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet4.xss">
+      <DependentUpon>cafeteriaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet5.xsc">
+      <DependentUpon>cafeteriaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet5.xss">
+      <DependentUpon>cafeteriaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet6.xsc">
+      <DependentUpon>cafeteriaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet6.xss">
+      <DependentUpon>cafeteriaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet7.xsc">
+      <DependentUpon>cafeteriaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet7.xss">
+      <DependentUpon>cafeteriaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet8.xsc">
+      <DependentUpon>cafeteriaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet8.xss">
+      <DependentUpon>cafeteriaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet9.xsc">
+      <DependentUpon>cafeteriaDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet9.xss">
+      <DependentUpon>cafeteriaDataSet9.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
