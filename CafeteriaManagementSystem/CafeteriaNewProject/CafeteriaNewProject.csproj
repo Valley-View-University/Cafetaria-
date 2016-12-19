@@ -81,6 +81,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>cafeteriaDataSet12.xsd</DependentUpon>
     </Compile>
+    <Compile Include="cafeteriaDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeteriaDataSet13.xsd</DependentUpon>
+    </Compile>
     <Compile Include="cafeteriaDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -229,6 +234,17 @@
     </None>
     <None Include="cafeteriaDataSet12.xss">
       <DependentUpon>cafeteriaDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet13.xsc">
+      <DependentUpon>cafeteriaDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="cafeteriaDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeteriaDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeteriaDataSet13.xss">
+      <DependentUpon>cafeteriaDataSet13.xsd</DependentUpon>
     </None>
     <None Include="cafeteriaDataSet2.xsc">
       <DependentUpon>cafeteriaDataSet2.xsd</DependentUpon>
